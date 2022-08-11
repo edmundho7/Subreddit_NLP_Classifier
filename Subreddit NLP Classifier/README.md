@@ -22,26 +22,26 @@ There are 3 datasets in the [`data`](./data/) folder for this project.
 ### Data dictionary
 
 r/wallstreetbets and r/stocks
-| Feature   	| Type   | Description                                                                                                                                                  |
+| Feature   	| Type   | Description                                                                                                                                
 |---------------|--------|----------------------------------------------------------------------------------------------|
 | subreddit 	| object | The subreddit where the post was taken from. This is either 'wallstreetbets' or 'stocks'.    | 
-| selftext 		| object | Body text of the subreddit post  															|
-| title     	| object | Title of the post 																			|
-| created_date  | object | The datetime of the created post 															|
+| selftext 	| object | Body text of the subreddit post  								|					
+| title     	| object | Title of the post 										|					
+| created_date  | object | The datetime of the created post 								|					
 
 Combined cleaned data
-| Feature   	| Type   | Description                                                                                                                                                  |
+| Feature   	      | Type   | Description                                                                                  |                                         
 |---------------------|--------|----------------------------------------------------------------------------------------------|
-| subreddit 		  | object | The subreddit where the post was taken from. This is either 'wallstreetbets' or 'stocks'.    | 
-| selftext 			  | object | Body text of the subreddit post  															|
-| title     		  | object | Title of the post 																			|
-| combined_text  	  | object | Combined text of selftext and title. Duplicates and text cleaning has been performed
-| combined_text_length| object | Length of combined text
-| combined_text_count | object | Word count of combined text
-| title_count		  | object | Word count of Title 
-| token_combined_text | object | Tokenized text of combined text
-| lem_combined_text	  | object | Lemmatized tokenized text
-| stem_combined_text  | object | Porter stemmed tokenized text
+| subreddit 	      | object | The subreddit where the post was taken from. This is either 'wallstreetbets' or 'stocks'.    |
+| selftext 	      | object | Body text of the subreddit post  							      |			
+| title     	      | object | Title of the post 									      |					
+| combined_text       | object | Combined text of selftext and title. Duplicates and text cleaning has been performed         |
+| combined_text_length| object | Length of combined text								      |
+| combined_text_count | object | Word count of combined text								      |
+| title_count	      | object | Word count of Title 								              |
+| token_combined_text | object | Tokenized text of combined text							      |
+| lem_combined_text   | object | Lemmatized tokenized text								      |
+| stem_combined_text  | object | Porter stemmed tokenized text								      |
 
 ---
 
