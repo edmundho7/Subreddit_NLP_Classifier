@@ -81,20 +81,20 @@ The project was completed in 3 separate notebooks.
 
 Hyperparameter tuning was performed on the different models to get the best parameters for each models. These models are then evaluated based on several metrics and criteria. The results are shown in the table below.
 
-|              				    | Train score | Test score | Generalisation | Precision | Recall | Specificity | F1 score | ROC AUC score |
-|------------------------------------------:|------------:|-----------:|---------------:|----------:|---------:|--------------:|--------------:|
-| Random Forest Count Vectorizer Unmodifed  | 0.731 | 0.690 | 5.609 | 0.690 | 0.673 | 0.786 | 0.585 | 0.725 | 0.686 |
-| Random Forest Count Vectorizer Lemmatized | 0.713 | 0.683 | 4.208 | 0.683 | 0.688 | 0.719	0.645 | 0.703 | 0.682 |
-| Random Forest Count Vectorizer Stemmed 	| 0.720 | 0.688 | 4.444 | 0.688 | 0.668 | 0.799	0.568 | 0.728 | 0.684 |
-| Random Forest TF-IDF Unmodifed 			| 0.745 | 0.688 | 7.651 | 0.688 | 0.667 | 0.804 | 0.563	| 0.729 | 0.683 |
-| Random Forest TF-IDF Lemmatized 			| 0.747 | 0.691 | 7.497 | 0.691 | 0.693 | 0.731 | 0.648 | 0.711 | 0.689 |
-| Random Forest TF-IDF Stemmed 				| 0.755 | 0.695 | 7.947 | 0.695 | 0.682 | 0.776 | 0.607 | 0.726	| 0.691 |
-| Naive Bayes CountVectorizer Unmodifed 	| 0.702 | 0.709 | -0.997 | 0.709 | 0.730 | 0.701| 0.719 | 0.715	| 0.710 |
-| Naive Bayes CountVectorizer Lemmatized 	| 0.693 | 0.692 | 0.144 | 0.692 | 0.705 | 0.704 | 0.680 | 0.704	| 0.692 |
-| Naive Bayes CountVectorizer Stemmed 		| 0.702 | 0.703 | -0.142 | 0.703 | 0.710 | 0.726 | 0.678 | 0.718 | 0.702 |
-| Naive Bayes TF-IDF Unmodifed 				| 0.751 | 0.728 | 3.063| 0.728 | 0.815 | 0.618 | 0.847 | 0.703 | 0.733 |
-| Naive Bayes TF-IDF Lemmatized 			| 0.745 | 0.713 | 4.295 | 0.713 | 0.788 | 0.616 | 0.820 | 0.691 | 0.718 |
-| Naive Bayes TF-IDF Stemmed 				| 0.758 | 0.712 | 6.069 | 0.712 | 0.771 | 0.636 | 0.795 | 0.697	| 0.715  |
+|                                           | Train score | Test score | Generalisation | Accuracy | Precision | Recall | Specificity |    F1 | ROC AUC |
+|------------------------------------------:|------------:|-----------:|---------------:|---------:|----------:|-------:|------------:|------:|--------:|
+|  Random Forest Count Vectorizer Unmodifed |       0.725 |      0.699 |          3.586 |    0.699 |     0.676 |  0.812 |       0.577 | 0.738 |   0.694 |
+| Random Forest Count Vectorizer Lemmatized |       0.711 |      0.688 |          3.235 |    0.688 |     0.684 |  0.746 |       0.626 | 0.714 |   0.686 |
+|    Random Forest Count Vectorizer Stemmed |       0.724 |      0.685 |          5.387 |    0.685 |     0.670 |  0.779 |       0.582 | 0.720 |   0.680 |
+|            Random Forest TF-IDF Unmodifed |       0.744 |      0.699 |          6.048 |    0.699 |     0.677 |  0.807 |       0.582 | 0.736 |   0.694 |
+|           Random Forest TF-IDF Lemmatized |       0.727 |      0.691 |          4.952 |    0.691 |     0.692 |  0.734 |       0.645 | 0.712 |   0.689 |
+|              Random Forest TF-IDF Stemmed |       0.762 |      0.694 |          8.924 |    0.694 |     0.683 |  0.769 |       0.612 | 0.723 |   0.690 |
+|     Naive Bayes CountVectorizer Unmodifed |       0.702 |      0.709 |         -0.997 |    0.709 |     0.730 |  0.701 |       0.719 | 0.715 |   0.710 |
+|    Naive Bayes CountVectorizer Lemmatized |       0.693 |      0.692 |          0.144 |    0.692 |     0.705 |  0.704 |       0.680 | 0.704 |   0.692 |
+|       Naive Bayes CountVectorizer Stemmed |       0.702 |      0.703 |         -0.142 |    0.703 |     0.710 |  0.726 |       0.678 | 0.718 |   0.702 |
+|              Naive Bayes TF-IDF Unmodifed |       0.751 |      0.728 |          3.063 |    0.728 |     0.815 |  0.618 |       0.847 | 0.703 |   0.733 |
+|             Naive Bayes TF-IDF Lemmatized |       0.745 |      0.713 |          4.295 |    0.713 |     0.788 |  0.616 |       0.820 | 0.691 |   0.718 |
+|                Naive Bayes TF-IDF Stemmed |       0.758 |      0.712 |          6.069 |    0.712 |     0.771 |  0.636 |       0.795 | 0.697 |   0.715 |
 
 By evaluating based on accuracy and precision as the main metric, the Naive Bayes Model with TF-IDF preprocessing on unmodified text is selected to be the most suitable model for the dataset
 
