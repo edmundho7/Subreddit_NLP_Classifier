@@ -81,8 +81,8 @@ The project was completed in 3 separate notebooks.
 
 Hyperparameter tuning was performed on the different models to get the best parameters for each models. These models are then evaluated based on several metrics and criteria. The results are shown in the table below.
 
-|              								| Train score | Test score | Generalisation | Precision | Recall | Specificity | F1 score | ROC AUC score |
-|------------------------------------------:|------------:|-----------:|---------------:|----------:|---------:|--------------:|
+|              				    | Train score | Test score | Generalisation | Precision | Recall | Specificity | F1 score | ROC AUC score |
+|------------------------------------------:|------------:|-----------:|---------------:|----------:|---------:|--------------:|--------------:|
 | Random Forest Count Vectorizer Unmodifed  | 0.731 | 0.690 | 5.609 | 0.690 | 0.673 | 0.786 | 0.585 | 0.725 | 0.686 |
 | Random Forest Count Vectorizer Lemmatized | 0.713 | 0.683 | 4.208 | 0.683 | 0.688 | 0.719	0.645 | 0.703 | 0.682 |
 | Random Forest Count Vectorizer Stemmed 	| 0.720 | 0.688 | 4.444 | 0.688 | 0.668 | 0.799	0.568 | 0.728 | 0.684 |
